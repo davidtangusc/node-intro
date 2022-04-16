@@ -14,6 +14,6 @@ Subsequent requests to this endpoint for the same username should read the repo 
 
 ## Tips
 
-- In the [fs](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html) module, you only need to use the [writeFile()](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_writefile_file_data_options_callback) and [readFile()](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_readfile_path_options_callback) methods.
-- When using `fs.readFile()`, if the file doesn't exist, the callback function will have an error.
+- Don't try and use async/await for this exercise, as it requires more advanced techniques.
+- In the [fs](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html) module, you only need to use the [fs.writeFile()](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_writefile_file_data_options_callback) and [fs.readFile()](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html#fs_fs_readfile_path_options_callback) methods.
 - The data in the second argument of `fs.writeFile` must be a string.
